@@ -1,0 +1,10 @@
+<jcr:root xmlns:cq='http://www.day.com/jcr/cq/1.0' xmlns:jcr='http://www.jcp.org/jcr/1.0' xmlns:nt='http://www.jcp.org/jcr/nt/1.0' xmlns:sling='http://sling.apache.org/jcr/sling/1.0' jcr:primaryType='cq:Page'>
+  <jcr:content jcr:primaryType='cq:PageContent' jcr:title='Page Title' cq:contextHubPath='/etc/cloudsettings/default/contexthub' cq:contextHubSegmentsPath='/etc/segmentation/contexthub' cq:template='/conf/wknd-spa-react/settings/wcm/templates/spa-page-template' sling:resourceType='wknd-spa-react/components/page' legacyPath='/page.xml' migrationBatch='Batch 1' jcr:description='A longer page description'>
+    <root jcr:primaryType='nt:unstructured' sling:resourceType='wcm/foundation/components/responsivegrid'>
+      <responsivegrid jcr:primaryType='nt:unstructured' sling:resourceType='wcm/foundation/components/responsivegrid'>
+        <title jcr:primaryType='nt:unstructured' sling:resourceType='wknd-spa-react/components/title' fontSize='h1' header='Page Title' />
+        <text jcr:primaryType='nt:unstructured' sling:resourceType='wknd-spa-react/components/text' textIsRich='true' text='&#10;        &#10;        &lt;p&gt;Here&apos;s some content Tanmay!&lt;/p&gt;&#10;    ' />
+      </responsivegrid>
+    </root>
+  </jcr:content>
+</jcr:root>
