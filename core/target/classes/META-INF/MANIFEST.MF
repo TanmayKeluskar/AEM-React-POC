@@ -1,0 +1,52 @@
+Manifest-Version: 1.0
+Bundle-Category: WKND SPA React
+Bundle-Description: Core bundle for WKND SPA React
+Bundle-ManifestVersion: 2
+Bundle-Name: WKND SPA React - Core
+Bundle-SymbolicName: aem-guides-wknd-spa.react.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.adobe.aem.guides.wkndspa.react.core.filters;versio
+ n="1.0";uses:="javax.servlet",com.adobe.aem.guides.wkndspa.react.core
+ .listeners;version="1.0";uses:="org.apache.sling.api.resource.observa
+ tion",com.adobe.aem.guides.wkndspa.react.core.models;version="1.0";us
+ es:="com.adobe.cq.export.json,javax.annotation,org.apache.sling.api.r
+ esource,org.apache.sling.models.annotations,org.apache.sling.models.a
+ nnotations.injectorspecific",com.adobe.aem.guides.wkndspa.react.core.
+ schedulers;version="1.0",com.adobe.aem.guides.wkndspa.react.core.serv
+ lets;version="1.0";uses:="javax.servlet,org.apache.sling.api,org.apac
+ he.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.adobe.aem.guides.
+ wkndspa.react.core.filters;version="[1.0,2)",com.adobe.aem.guides.wkn
+ dspa.react.core.listeners;version="[1.0,2)",com.adobe.aem.guides.wknd
+ spa.react.core.models;version="[1.0,2)",com.adobe.aem.guides.wkndspa.
+ react.core.schedulers;version="[1.0,2)",com.adobe.aem.guides.wkndspa.
+ react.core.servlets;version="[1.0,2)",com.adobe.cq.export.json;versio
+ n="[2.0,3)",com.day.cq.wcm.api;version="[1.27,2)",com.google.gson;ver
+ sion="[2.8,3)",javax.jcr;version="[2.0,3)",javax.servlet;version="[3.
+ 1,4)",org.apache.commons.lang3;version="[3.6,4)",org.apache.jackrabbi
+ t.commons;version="[2.4,3)",org.apache.sling.api;version="[2.3,3)",or
+ g.apache.sling.api.request;version="[2.4,3)",org.apache.sling.api.res
+ ource;version="[2.11,3)",org.apache.sling.api.resource.observation;ve
+ rsion="[1.2,2)",org.apache.sling.api.servlets;version="[2.2,3)",org.a
+ pache.sling.models.annotations;version="[1.5,2)",org.apache.sling.mod
+ els.annotations.injectorspecific;version="[1.1,2)",org.json;version="
+ [20090211.0,20090212)",org.slf4j;version="[1.7,2)"
+Private-Package: com.adobe.aem.guides.wkndspa.react.core.models.impl
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.adobe.aem.guides.wkndspa.react.core.fi
+ lters.LoggingFilter.xml,OSGI-INF/com.adobe.aem.guides.wkndspa.react.c
+ ore.listeners.SimpleResourceListener.xml,OSGI-INF/com.adobe.aem.guide
+ s.wkndspa.react.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/com.
+ adobe.aem.guides.wkndspa.react.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.adobe.aem.guides.wkndspa.react.core.models.He
+ lloWorldModel,com.adobe.aem.guides.wkndspa.react.core.models.impl.Ope
+ nWeatherModelImpl
+
