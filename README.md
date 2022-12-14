@@ -1,3 +1,11 @@
+# Before Running the project
+
+## `npm install`
+
+We need to install all node modules before running any other scripts. Navigate to ./ui.frontend and run npm install in command prompt.
+This command installs a package and any packages that it depends on. If the package has a package-lock, or an npm shrinkwrap file, or a yarn lock file
+
+
 # Sample AEM project template
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
